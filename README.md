@@ -1,5 +1,7 @@
 # LlamaTune: Sample-Efficient DBMS Configuration Tuning
 
+**Reproduction result plots and datasets are in analysis folder**
+
 This repository contains the source code for the paper "[LlamaTune: Sample-Efficient DBMS Configuration Tuning](https://arxiv.org/abs/2203.05128)" (to appear in [VLDB'22](https://vldb.org/2022)). LlamaTune is a tuning pipeline that can be integrated with existing state-of-the-art DBMS knob tuning optimizers and can achieve greater sample-efficiency, through targeted search space transformations. In particular, LlamaTune (1) reduces the dimensionality of the original configuration search space using random linear projections, (2) provides support for handling *hybrid* knobs (i.e., numerical knobs with special values), and (3) avoids the large ranges of certain knobs with value bucketization. For more information, please refer to the paper.
 
 The code in this repository can be used to generate and output configurations suggested by LlamaTune when coupled with SMAC, Gaussian-based BO, and DDPG optimizers. Interested users can plug this code to their own tools in order to evaluate these configurations on real DBMS deployments.
